@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Best Practices -->
+  <title>Sapna | Developer, Dancer, Fashion Designer</title>
+  <meta name="description" content="Cinematic portfolio of Sapna — First-year student, Web Developer, Dancer, Fashion Designer, and Campaign Specialist at Vedonyx. Four crafts. One spell.">
+  <meta name="keywords" content="Sapna, Developer, Dancer, Fashion Designer, Campaign Specialist, Vedonyx, Dark Academia, Cinematic Portfolio">
+  <meta name="author" content="Sapna">
+  
+  <!-- Open Graph Social Metadata -->
+  <meta property="og:title" content="Sapna | Developer, Dancer, Fashion Designer">
+  <meta property="og:description" content="Four crafts. One spell. The dark academia portfolio and cinematic archive of Sapna.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sapna.dev">
+  <meta property="og:image" content="images/hero-castle.jpg">
+  
+  <!-- Google Fonts: Cormorant Garamond, Jost, Cinzel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       PURE CSS INTERACTIVE CONTROLS (Zero JavaScript)
+       ========================================================================= -->
+  
+  <!-- Lumos / Ivory Archive Mode Toggle -->
+  <input type="checkbox" id="lumos" class="sr-only" aria-label="Toggle Lumos ivory archive mode">
+
+  <!-- Unseal Last Letter Contact Form Toggle -->
+  <input type="checkbox" id="unseal-letter" class="sr-only" aria-label="Break wax seal to open correspondence letter">
+
+  <!-- =========================================================================
+       FIXED MINIMAL NAVIGATION WITH PROGRESS LINE
+       ========================================================================= -->
+  <header class="nav-fixed" id="top-nav">
+    <div class="nav-progress-line" aria-hidden="true"></div>
+    <div class="nav-inner">
+      <a href="#gate" class="nav-brand-archive" aria-label="Return to The Gate">
+        <span class="brand-monogram">S</span>
+        <!-- EDIT ME: Brand / Monogram text -->
+        <span class="brand-text">Sapna &bull; Archive</span>
+      </a>
+
+      <!-- Minimal Roman Numeral Navigation -->
+      <nav aria-label="Archive Navigation">
+        <ul class="nav-menu">
+          <li><a href="#journey" class="nav-link"><span>&bull;</span> Journey</a></li>
+          <li><a href="#great-hall" class="nav-link"><span>&bull;</span> Hall</a></li>
+          <li><a href="#spellbook" class="nav-link"><span>I</span> Code</a></li>
+          <li><a href="#prophet" class="nav-link"><span>II</span> Marketing</a></li>
+          <li><a href="#midnight-ball" class="nav-link"><span>III</span> Dance</a></li>
+          <li><a href="#atelier" class="nav-link"><span>IV</span> Fashion</a></li>
+          <li><a href="#cabinet" class="nav-link"><span>V</span> Cabinet</a></li>
+          <li><a href="#contact" class="nav-link"><span>VI</span> Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions: Lumos Ivory Mode & Ambient Audio -->
+      <div class="nav-actions">
+        <label for="lumos" class="lumos-btn" title="Toggle Lumos ivory mode" tabindex="0">
+          <span class="lumos-dot"></span>
+          <span>Lumos</span>
+        </label>
+
+        <!-- EDIT ME: Replace audio/ambient.mp3 if you have an alternative score -->
+        <div class="nav-audio" title="Ambient Archive Score (Manual Play)">
+          <audio controls preload="none" aria-label="Play ambient score">
+            <source src="audio/ambient.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================================
+         00. THE GATE (HERO SCENE WITH CAMERA PUSH-IN & TORN PARCHMENT EDGE)
+         ======================================================================= -->
+    <section class="hero-gate-scene" id="gate" aria-label="The Gate Entrance">
+      
+      <!-- Full-Bleed Hero Castle Image with Slow 25s Camera Push-In -->
+      <div class="hero-bg-layer" aria-hidden="true">
+        <img src="images/hero-castle.jpg" alt="Majestic gothic castle at golden hour sunset" class="hero-castle-img" loading="eager" fetchpriority="high">
+        <div class="hero-dark-overlay"></div>
+        <div class="castle-window-pulse"></div>
+      </div>
+
+      <!-- Drifting Mist Layers -->
+      <div class="hero-mist-layer" aria-hidden="true">
+        <div class="mist-band-1"></div>
+        <div class="mist-band-2"></div>
+      </div>
+
+      <!-- 35 Rising Golden Embers -->
+      <div class="embers-container" aria-hidden="true">
+        <span class="ember-particle" style="--x: 5%; --dur: 9.5s; --delay: 0.2s; --size: 2.5px;"></span>
+        <span class="ember-particle" style="--x: 12%; --dur: 8.2s; --delay: 1.4s; --size: 3.5px;"></span>
+        <span class="ember-particle" style="--x: 18%; --dur: 11.0s; --delay: 0.8s; --size: 2.0px;"></span>
+        <span class="ember-particle" style="--x: 24%; --dur: 7.8s; --delay: 2.2s; --size: 4.0px;"></span>
+        <span class="ember-particle" style="--x: 29%; --dur: 10.4s; --delay: 3.1s; --size: 2.5px;"></span>
+        <span class="ember-particle" style="--x: 35%; --dur: 9.0s; --delay: 1.0s; --size: 3.0px;"></span>
+        <span class="ember-particle" style="--x: 42%; --dur: 12.2s; --delay: 2.5s; --size: 2.0px;"></span>
+        <span class="ember-particle" style="--x: 48%; --dur: 8.6s; --delay: 0.4s; --size: 3.8px;"></span>
+        <span class="ember-particle" style="--x: 53%; --dur: 10.0s; --delay: 1.8s; --size: 2.5px;"></span>
+        <span class="ember-particle" style="--x: 59%; --dur: 7.5s; --delay: 2.9s; --size: 3.2px;"></span>
+        <span class="ember-particle" style="--x: 64%; --dur: 11.5s; --delay: 0.6s; --size: 2.0px;"></span>
+        <span class="ember-particle" style="--x: 71%; --dur: 8.8s; --delay: 3.4s; --size: 4.0px;"></span>
+        <span class="ember-particle" style="--x: 77%; --dur: 9.6s; --delay: 1.2s; --size: 2.8px;"></span>
+        <span class="ember-particle" style="--x: 83%; --dur: 12.0s; --delay: 2.0s; --size: 2.2px;"></span>
+        <span class="ember-particle" style="--x: 89%; --dur: 8.0s; --delay: 0.9s; --size: 3.5px;"></span>
+        <span class="ember-particle" style="--x: 95%; --dur: 10.8s; --delay: 2.7s; --size: 2.5px;"></span>
+      </div>
+
+      <!-- Gliding Bird Silhouettes -->
+      <div class="hero-birds-layer" aria-hidden="true">
+        <div class="bird-silhouette bird-1">
+          <svg viewBox="0 0 32 16"><path d="M0 6 C8 0, 14 0, 16 8 C18 0, 24 0, 32 6 C24 8, 18 10, 16 16 C14 10, 8 8, 0 6 Z"/></svg>
+        </div>
+        <div class="bird-silhouette bird-2">
+          <svg viewBox="0 0 32 16"><path d="M0 6 C8 0, 14 0, 16 8 C18 0, 24 0, 32 6 C24 8, 18 10, 16 16 C14 10, 8 8, 0 6 Z"/></svg>
+        </div>
+        <div class="bird-silhouette bird-3">
+          <svg viewBox="0 0 32 16"><path d="M0 6 C8 0, 14 0, 16 8 C18 0, 24 0, 32 6 C24 8, 18 10, 16 16 C14 10, 8 8, 0 6 Z"/></svg>
+        </div>
+      </div>
+
+      <!-- Hero Typography: Staggered Letter-by-Letter Blur-to-Sharp Reveal -->
+      <div class="gate-content">
+        <span class="label-caps" style="display: block; margin-bottom: 12px; opacity: 0.85;">The Sanctuary of Four Disciplines</span>
+        
+        <!-- EDIT ME: Name revealed letter-by-letter -->
+        <h1 class="gate-hero-name gold-shimmer" aria-label="SAPNA">
+          <span class="letter-char" style="--char-i: 1;">S</span>
+          <span class="letter-char" style="--char-i: 2;">A</span>
+          <span class="letter-char" style="--char-i: 3;">P</span>
+          <span class="letter-char" style="--char-i: 4;">N</span>
+          <span class="letter-char" style="--char-i: 5;">A</span>
+        </h1>
+
+        <!-- EDIT ME: Tagline -->
+        <p class="gate-tagline-fade">
+          Four crafts. <span>One spell.</span>
+        </p>
+
+        <!-- Animated Scroll to Enter Cue -->
+        <a href="#journey" class="scroll-enter-cue" aria-label="Scroll to enter the Journey">
+          <div class="cue-wax-seal">S</div>
+          <span class="cue-text">Scroll to Enter &darr;</span>
+        </a>
+      </div>
+
+      <!-- Torn-Parchment Bottom Edge Transition -->
+      <div class="torn-parchment-edge" aria-hidden="true"></div>
+    </section>
+
+    <!-- =======================================================================
+         SCENE 2: THE JOURNEY (STICKY TRAIN COMPARTMENT WINDOW)
+         ======================================================================= -->
+    <section class="scene-journey" id="journey" aria-label="Scene 2: The Journey">
+      <div class="container">
+        
+        <header class="chamber-header" style="text-align: center;">
+          <div class="chamber-meta" style="justify-content: center;">
+            <span class="chamber-numeral">&bull;</span>
+            <div class="chamber-line"></div>
+            <span class="label-caps">The Departure</span>
+          </div>
+          <h2 class="chamber-title">The Journey Inward</h2>
+          <p class="chamber-subtitle" style="margin: 0 auto;">Peering through the vintage carriage window toward the distant sanctuary</p>
+        </header>
+
+        <!-- Compartment Window Frame with train-window.jpg -->
+        <div class="train-window-stage">
+          <div class="train-window-bg">
+            <img src="images/train-window.jpg" alt="View of a distant castle in a misty valley from a steam train window" class="train-scenery-img" loading="lazy">
+            <div class="train-glass-reflection"></div>
+          </div>
+        </div>
+
+        <!-- 4 Journey Role Cards -->
+        <div class="journey-roles-grid">
+          
+          <article class="journey-role-card">
+            <span class="journey-role-roman">I &bull; Code Weaver</span>
+            <h3 class="journey-role-title">Algorithmic DOM</h3>
+            <p class="journey-role-desc">
+              <!-- EDIT ME: Role 1 blurb -->
+              Constructing semantic, zero-dependency digital architectures where modern CSS and algorithms render living responsive interfaces.
+            </p>
+          </article>
+
+          <article class="journey-role-card">
+            <span class="journey-role-roman">II &bull; Strategist</span>
+            <h3 class="journey-role-title">Campaign Alchemy</h3>
+            <p class="journey-role-desc">
+              <!-- EDIT ME: Role 2 blurb -->
+              Spearheading multi-channel marketing campaigns at Vedonyx, fusing high-fashion editorial aesthetics with performance conversion funnels.
+            </p>
+          </article>
+
+          <article class="journey-role-card">
+            <span class="journey-role-roman">III &bull; Kinetic Dancer</span>
+            <h3 class="journey-role-title">Stage &amp; Mudra</h3>
+            <p class="journey-role-desc">
+              <!-- EDIT ME: Role 3 blurb -->
+              Giving tangible form to gravity and classical Kathak rhythm, synthesizing classical Indian mudras with contemporary floorwork.
+            </p>
+          </article>
+
+          <article class="journey-role-card">
+            <span class="journey-role-roman">IV &bull; Couture Artisan</span>
+            <h3 class="journey-role-title">Textile Form</h3>
+            <p class="journey-role-desc">
+              <!-- EDIT ME: Role 4 blurb -->
+              Drafting structured velvet capes and celestial organza silhouettes designed to move symbiotically with human anatomy.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         SCENE 3: THE GREAT HALL (CANDLES & 4 GLOWING CHAMBER PORTALS)
+         ======================================================================= -->
+    <section class="scene-great-hall" id="great-hall" aria-label="Scene 3: The Great Hall">
+      
+      <!-- Full-bleed great-hall.jpg Background -->
+      <div class="hall-bg-layer" aria-hidden="true">
+        <img src="images/great-hall.jpg" alt="Great hall with floating candles" class="hall-backdrop-img" loading="lazy">
+        <div class="hall-dark-overlay"></div>
+      </div>
+
+      <!-- 30 Floating Bobbing CSS Candles -->
+      <div class="floating-candles-chamber" aria-hidden="true">
+        <div class="hall-candle" style="--x: 8%; --y: 18%; --dur: 4.2s; --del: 0.1s;"><div class="flame"></div></div>
+        <div class="hall-candle" style="--x: 16%; --y: 28%; --dur: 5.1s; --del: 1.2s;"><div class="flame"></div></div>
+        <div class="hall-candle" style="--x: 23%; --y: 14%; --dur: 3.8s; --del: 0.5s;"><div class="flame"></div></div>
+        <div class="hall-candle" style="--x: 31%; --y: 22%; --dur: 4.8s; --del: 1.9s;"><div class="flame"></div></div>
+        <div class="hall-candle" style="--x: 39%; --y: 12%; --dur: 5.4s; --del: 0.3s;"><div class="flame"></div></div>
+        <div class="hall-candle" style="--x: 47%; --y: 26%; --dur: 4.1s; --del: 1.5s;"><div class="flame"></div></div>
+        <div class="hall-candle" style="--x: 54%; --y: 16%; --dur: 4.9s; --del: 0.8s;"><div class="flame"></div></div>
+        <div class="hall-candle" style="--x: 62%; --y: 30%; --dur: 3.9s; --del: 2.1s;"><div class="flame"></div></div>
+        <div class="hall-candle" style="--x: 70%; --y: 15%; --dur: 5.2s; --del: 0.4s;"><div class="flame"></div></div>
+        <div class="hall-candle" style="--x: 78%; --y: 24%; --dur: 4.4s; --del: 1.6s;"><div class="flame"></div></div>
+        <div class="hall-candle" style="--x: 86%; --y: 19%; --dur: 5.0s; --del: 0.9s;"><div class="flame"></div></div>
+        <div class="hall-candle" style="--x: 93%; --y: 27%; --dur: 4.3s; --del: 1.1s;"><div class="flame"></div></div>
+      </div>
+
+      <div class="container" style="position: relative; z-index: 5;">
+        
+        <header class="chamber-header" style="text-align: center;">
+          <div class="chamber-meta" style="justify-content: center;">
+            <span class="chamber-numeral">&bull;</span>
+            <div class="chamber-line"></div>
+            <span class="label-caps">The Assembly</span>
+          </div>
+          <h2 class="chamber-title">The Great Hall</h2>
+          <p class="chamber-subtitle" style="margin: 0 auto;">Select an illuminated chamber to inspect its dedicated archival works</p>
+        </header>
+
+        <!-- 4 Glowing Chamber Portal Cards -->
+        <div class="chamber-portals-grid">
+          
+          <!-- Portal 1 -->
+          <a href="#spellbook" class="chamber-portal-card">
+            <div>
+              <span class="portal-roman">I &bull; Code</span>
+              <h3 class="portal-title">The Spellbook</h3>
+              <p class="portal-desc">
+                Towering library shelves, grimoire book spines, and semantic front-end systems.
+              </p>
+            </div>
+            <span class="portal-cue">Enter Library &rarr;</span>
+          </a>
+
+          <!-- Portal 2 -->
+          <a href="#prophet" class="chamber-portal-card">
+            <div>
+              <span class="portal-roman">II &bull; Marketing</span>
+              <h3 class="portal-title">The Daily Prophet</h3>
+              <p class="portal-desc">
+                Broadsheet dispatch from Vedonyx: verified statistics, campaigns, and agency metrics.
+              </p>
+            </div>
+            <span class="portal-cue">Read Broadsheet &rarr;</span>
+          </a>
+
+          <!-- Portal 3 -->
+          <a href="#midnight-ball" class="chamber-portal-card">
+            <div>
+              <span class="portal-roman">III &bull; Dance</span>
+              <h3 class="portal-title">The Midnight Ball</h3>
+              <p class="portal-desc">
+                Cinematic spotlight stage, performance reels, and classical Kathak timeline.
+              </p>
+            </div>
+            <span class="portal-cue">Attend Ball &rarr;</span>
+          </a>
+
+          <!-- Portal 4 -->
+          <a href="#atelier" class="chamber-portal-card">
+            <div>
+              <span class="portal-roman">IV &bull; Fashion</span>
+              <h3 class="portal-title">The Atelier</h3>
+              <p class="portal-desc">
+                Couture lookbook, sketch-to-final reveals, material swatches, and research journal.
+              </p>
+            </div>
+            <span class="portal-cue">Visit Atelier &rarr;</span>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         I. CHAMBER I: THE SPELLBOOK (WEB DEVELOPER)
+         ======================================================================= -->
+    <section class="chamber-spellbook" id="spellbook" aria-label="Chamber I: The Spellbook">
+      
+      <!-- Full-bleed library.jpg Background -->
+      <div class="library-bg-layer" aria-hidden="true">
+        <img src="images/library.jpg" alt="Ancient dark-academia library with floating books and green lamps" class="library-backdrop-img" loading="lazy">
+        <div class="library-dark-overlay"></div>
+      </div>
+
+      <div class="container">
+        
+        <header class="chamber-header">
+          <div class="chamber-meta">
+            <span class="chamber-numeral">I</span>
+            <div class="chamber-line"></div>
+            <span class="label-caps">Department of Computing</span>
+          </div>
+          <h2 class="chamber-title">The Spellbook</h2>
+          <p class="chamber-subtitle">Where algorithmic architecture behaves like esoteric incantations</p>
+        </header>
+
+        <div class="spellbook-layout">
+          <!-- Left: Giant Editorial Heading & Manuscript Terminal -->
+          <div class="spellbook-editorial-text">
+            <h3 class="editorial-giant-heading">
+              "Code is just<br><em>spellwork</em>."
+            </h3>
+            <p class="spellbook-desc">
+              <!-- EDIT ME: Editorial Paragraph on your Web Development approach -->
+              I view front-end engineering not as assembly, but as alchemy. By mastering modern CSS selectors, zero-dependency DOM manipulation, and fluid mathematical typography, interfaces transcend utility and become living artifacts.
+            </p>
+
+            <!-- Glowing Terminal Incantation Manuscript -->
+            <div class="manuscript-terminal" aria-label="Terminal manuscript snippet">
+              <span class="typing-line">const incantation = new Spell({ DOM: 'semantic', CSS: 'pure' });</span>
+            </div>
+          </div>
+
+          <!-- Right: Vertical Book Spines on Shelf (CSS 3D) -->
+          <div class="bookshelf-stage" role="region" aria-label="Grimoire Shelf of Projects">
+            
+            <!-- Book Spine 1 -->
+            <!-- EDIT ME: Project 1 Details -->
+            <article class="book-spine-card" tabindex="0">
+              <div class="spine-header">
+                <span class="spine-grimoire-no">Tome No. 01</span>
+                <span class="spine-year">2026 &bull; Web App</span>
+              </div>
+              <h4 class="book-title">Spellcraft: Algorithmic Grimoire</h4>
+              <p class="book-summary">
+                A browser-native code playground and syntax compiler designed for modern web developers, engineered with zero external libraries and sub-millisecond compilation passes.
+              </p>
+              
+              <div class="rune-stack" aria-label="Tech Stack Runes">
+                <span class="rune-tag">&#10038; Semantic HTML5</span>
+                <span class="rune-tag">&#10038; CSS Grid / :has()</span>
+                <span class="rune-tag">&#10038; ES6 Engine</span>
+                <span class="rune-tag">&#10038; Storage API</span>
+              </div>
+
+              <div class="book-links">
+                <!-- EDIT ME: Replace with your actual project URL -->
+                <a href="https://github.com/sapna" class="book-link" target="_blank" rel="noopener noreferrer">
+                  <span>GitHub Repository</span> &rarr;
+                </a>
+                <!-- EDIT ME: Replace with live demo URL -->
+                <a href="#spellbook" class="book-link">
+                  <span>Live Grimoire</span> &nearr;
+                </a>
+              </div>
+            </article>
+
+            <!-- Book Spine 2 -->
+            <!-- EDIT ME: Project 2 Details -->
+            <article class="book-spine-card" tabindex="0">
+              <div class="spine-header">
+                <span class="spine-grimoire-no">Tome No. 02</span>
+                <span class="spine-year">2025 &bull; Architecture</span>
+              </div>
+              <h4 class="book-title">Nimbus: Sovereign Architectural Emporium</h4>
+              <p class="book-summary">
+                A high-performance luxury storefront architecture engineered with fluid clamp() typography, pure CSS modal overlays, and accessible WCAG AA keyboard traversal.
+              </p>
+              
+              <div class="rune-stack" aria-label="Tech Stack Runes">
+                <span class="rune-tag">&#10038; Core Web Vitals</span>
+                <span class="rune-tag">&#10038; Modern CSS3</span>
+                <span class="rune-tag">&#10038; ARIA Primitives</span>
+                <span class="rune-tag">&#10038; Responsive Clamp</span>
+              </div>
+
+              <div class="book-links">
+                <!-- EDIT ME: Replace with your actual project URL -->
+                <a href="https://github.com/sapna" class="book-link" target="_blank" rel="noopener noreferrer">
+                  <span>GitHub Repository</span> &rarr;
+                </a>
+                <!-- EDIT ME: Replace with live demo URL -->
+                <a href="#spellbook" class="book-link">
+                  <span>View Emporium</span> &nearr;
+                </a>
+              </div>
+            </article>
+
+            <!-- Book Spine 3 -->
+            <!-- EDIT ME: Project 3 Details -->
+            <article class="book-spine-card" tabindex="0">
+              <div class="spine-header">
+                <span class="spine-grimoire-no">Tome No. 03</span>
+                <span class="spine-year">2025 &bull; Kinetic UI</span>
+              </div>
+              <h4 class="book-title">ChronoDial: Celestial Time-Turner</h4>
+              <p class="book-summary">
+                An interactive chronological exploration engine featuring custom trigonometric SVG coordinates, CSS @property animations, and responsive micro-interactions.
+              </p>
+              
+              <div class="rune-stack" aria-label="Tech Stack Runes">
+                <span class="rune-tag">&#10038; CSS @property</span>
+                <span class="rune-tag">&#10038; SVG Coordinates</span>
+                <span class="rune-tag">&#10038; Kinetic Easing</span>
+                <span class="rune-tag">&#10038; Micro-Interactions</span>
+              </div>
+
+              <div class="book-links">
+                <!-- EDIT ME: Replace with your actual project URL -->
+                <a href="https://github.com/sapna" class="book-link" target="_blank" rel="noopener noreferrer">
+                  <span>GitHub Repository</span> &rarr;
+                </a>
+                <!-- EDIT ME: Replace with live demo URL -->
+                <a href="#spellbook" class="book-link">
+                  <span>Launch ChronoDial</span> &nearr;
+                </a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         II. CHAMBER II: THE DAILY PROPHET (DIGITAL MARKETING, VEDONYX)
+         ======================================================================= -->
+    <section class="chamber-prophet" id="prophet" aria-label="Chamber II: The Daily Prophet">
+      <div class="container">
+        
+        <header class="chamber-header">
+          <div class="chamber-meta">
+            <span class="chamber-numeral">II</span>
+            <div class="chamber-line"></div>
+            <span class="label-caps">The Agency Broadsheet</span>
+          </div>
+          <h2 class="chamber-title">The Daily Prophet</h2>
+          <p class="chamber-subtitle">Official Dispatch &bull; Vedonyx Digital Agency, New Delhi</p>
+        </header>
+
+        <!-- Bone-Coloured Editorial Broadsheet Page -->
+        <article class="broadsheet-page">
+          
+          <header class="broadsheet-masthead">
+            <div class="broadsheet-meta-bar">
+              <span>SPECIAL DISPATCH NO. CCCXCIV</span>
+              <span>VEDONYX AGENCY GAZETTE &bull; NEW DELHI</span>
+              <span>EDITION: EXCLUSIVE</span>
+            </div>
+            <h3 class="broadsheet-title">THE DAILY PROPHET</h3>
+            <p class="broadsheet-motto">"Where Strategic Vision Transforms Audience Behavior"</p>
+          </header>
+
+          <h4 class="broadsheet-lead-title">
+            <!-- EDIT ME: Headline -->
+            Campaign Specialist Spearheads Brand Reach at Vedonyx
+          </h4>
+
+          <!-- 4 Oversized Statistics with CSS @property Counters -->
+          <div class="broadsheet-stats-band" aria-label="Key Agency Statistics">
+            <div class="broadsheet-stat">
+              <span class="stat-giant-num count-reach" aria-label="350 percent social reach growth"></span>
+              <span class="stat-label-text">Audience Reach Growth</span>
+            </div>
+
+            <div class="broadsheet-stat">
+              <span class="stat-giant-num count-campaigns" aria-label="45 plus campaigns spearheaded"></span>
+              <span class="stat-label-text">Multi-Channel Campaigns</span>
+            </div>
+
+            <div class="broadsheet-stat">
+              <span class="stat-giant-num count-impressions" aria-label="2.5 million brand impressions"></span>
+              <span class="stat-label-text">Brand Impressions Generated</span>
+            </div>
+
+            <div class="broadsheet-stat">
+              <span class="stat-giant-num count-satisfaction" aria-label="98 percent client satisfaction"></span>
+              <span class="stat-label-text">Client Retention &amp; ROI</span>
+            </div>
+          </div>
+
+          <!-- Multi-Column Editorial Layout -->
+          <div class="broadsheet-columns">
+            <p class="broadsheet-dropcap">
+              <!-- EDIT ME: Paragraph 1 -->
+              At Vedonyx, one of New Delhi's forward-thinking digital agencies, creative boundaries dissolve in the face of rigorous strategy. Operating as Graphic Designer &amp; Digital Marketing Executive, Sapna quickly earned the designation of <em>Campaign Specialist</em> by executing campaigns that marry typographic restraint with aggressive performance funnels.
+            </p>
+
+            <blockquote class="broadsheet-quote">
+              "Sapna transforms static marketing briefs into dynamic cultural conversations that drive tangible commercial ROI."
+            </blockquote>
+
+            <p>
+              <!-- EDIT ME: Paragraph 2 -->
+              Her domain encompassed cross-channel visual direction, high-velocity social carousels, responsive newsletters, and analytical audience segmentation. Every creative decision was guided by a core philosophy: authentic aesthetic beauty is the most potent conversion factor in digital communications.
+            </p>
+
+            <p>
+              <!-- EDIT ME: Paragraph 3 -->
+              By rigorously studying audience retention metrics, she iterated creative storyboards to produce campaigns that consistently outperformed historical agency benchmarks across engagement, click-through rates, and brand affinity.
+            </p>
+          </div>
+
+          <!-- Masonry Grid of Designed Posts with Duotone to Color Hover -->
+          <span class="label-caps" style="color: #554e44; margin-bottom: 8px; display: block;">Archived Campaign Artifacts (Hover to Reveal)</span>
+          <div class="prophet-masonry-grid">
+            
+            <!-- Sample 1 -->
+            <!-- EDIT ME: Replace images/marketing-01.jpg -->
+            <figure class="prophet-sample-card">
+              <img src="images/marketing-01.jpg" alt="Campaign Strategy Blueprint Sample" loading="lazy">
+              <figcaption class="prophet-sample-overlay">Plate I &bull; Strategic Architecture</figcaption>
+            </figure>
+
+            <!-- Sample 2 -->
+            <!-- EDIT ME: Replace images/marketing-02.jpg -->
+            <figure class="prophet-sample-card">
+              <img src="images/marketing-02.jpg" alt="Brand Identity & Editorial Social Sample" loading="lazy">
+              <figcaption class="prophet-sample-overlay">Plate II &bull; Editorial Identity</figcaption>
+            </figure>
+
+            <!-- Sample 3 -->
+            <!-- EDIT ME: Replace images/marketing-03.jpg -->
+            <figure class="prophet-sample-card">
+              <img src="images/marketing-03.jpg" alt="Visual Ad Conversions Sample" loading="lazy">
+              <figcaption class="prophet-sample-overlay">Plate III &bull; Performance Storyboard</figcaption>
+            </figure>
+
+            <!-- Sample 4 -->
+            <!-- EDIT ME: Replace images/marketing-04.jpg -->
+            <figure class="prophet-sample-card">
+              <img src="images/marketing-04.jpg" alt="Analytics & Funnel Optimization Sample" loading="lazy">
+              <figcaption class="prophet-sample-overlay">Plate IV &bull; Analytics Roadmap</figcaption>
+            </figure>
+
+          </div>
+
+          <!-- Scrolling CSS Marquee Ticker of Skills -->
+          <div class="marquee-container" aria-hidden="true">
+            <div class="marquee-content">
+              <span class="marquee-item">BRANDING</span>
+              <span class="marquee-item">&bull;</span>
+              <span class="marquee-item">CAMPAIGN ARCHITECTURE</span>
+              <span class="marquee-item">&bull;</span>
+              <span class="marquee-item">EDITORIAL DESIGN</span>
+              <span class="marquee-item">&bull;</span>
+              <span class="marquee-item">SOCIAL STRATEGY</span>
+              <span class="marquee-item">&bull;</span>
+              <span class="marquee-item">PERFORMANCE ANALYTICS</span>
+              <span class="marquee-item">&bull;</span>
+              <span class="marquee-item">DIGITAL ALCHEMY</span>
+              <span class="marquee-item">&bull;</span>
+              <span class="marquee-item">BRANDING</span>
+              <span class="marquee-item">&bull;</span>
+              <span class="marquee-item">CAMPAIGN ARCHITECTURE</span>
+              <span class="marquee-item">&bull;</span>
+              <span class="marquee-item">EDITORIAL DESIGN</span>
+              <span class="marquee-item">&bull;</span>
+              <span class="marquee-item">SOCIAL STRATEGY</span>
+              <span class="marquee-item">&bull;</span>
+              <span class="marquee-item">PERFORMANCE ANALYTICS</span>
+              <span class="marquee-item">&bull;</span>
+              <span class="marquee-item">DIGITAL ALCHEMY</span>
+            </div>
+          </div>
+
+        </article>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         III. CHAMBER III: THE MIDNIGHT BALL (DANCER)
+         ======================================================================= -->
+    <section class="chamber-yule letterbox-bars" id="midnight-ball" aria-label="Chamber III: The Midnight Ball">
+      
+      <!-- Full-bleed ballroom.jpg Background -->
+      <div class="ballroom-bg-layer" aria-hidden="true">
+        <img src="images/ballroom.jpg" alt="Grand candlelit gothic ballroom with spotlight" class="ballroom-backdrop-img" loading="lazy">
+        <div class="ballroom-dark-overlay"></div>
+      </div>
+
+      <div class="container" style="position: relative; z-index: 5;">
+        
+        <header class="chamber-header">
+          <div class="chamber-meta">
+            <span class="chamber-numeral">III</span>
+            <div class="chamber-line"></div>
+            <span class="label-caps">Kinetic Arts &bull; Classical &amp; Contemporary</span>
+          </div>
+          <h2 class="chamber-title">The Midnight Ball</h2>
+          <p class="chamber-subtitle">Translating rhythm, gravity, and storytelling into physical space</p>
+        </header>
+
+        <!-- Video Player under Moving Spotlight Cone -->
+        <!-- EDIT ME: Replace videos/dance-01.mp4 or embed YouTube iframe if desired -->
+        <div class="spotlight-video-wrapper">
+          <div class="spotlight-cone" aria-hidden="true"></div>
+          
+          <video controls preload="none" poster="images/marketing-03.jpg" aria-label="Sapna Classical Kathak &amp; Contemporary Performance">
+            <source src="videos/dance-01.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+
+          <div class="video-editorial-caption">
+            <!-- EDIT ME: Performance Title -->
+            <span class="video-title">Tarana &bull; Classical Kathak &amp; Contemporary Synthesis</span>
+            <span class="video-meta">Soloist &amp; Choreographer: Sapna</span>
+          </div>
+        </div>
+
+        <!-- Horizontal Scroll-Snap Reel Strip -->
+        <div class="reel-strip-header">
+          <span class="label-caps">Performance Archives &bull; 35mm Frame Reels</span>
+          <span class="label-caps" style="color: var(--bone-muted);">&#8592; Scroll to Explore &#8594;</span>
+        </div>
+
+        <div class="reel-scroll-snap" role="region" aria-label="Performance Reels Strip">
+          
+          <article class="film-reel-card">
+            <div class="film-frame-media">
+              <img src="images/marketing-01.jpg" alt="Kathak Tatkar Footwork Showcase" loading="lazy">
+            </div>
+            <div class="film-card-info">
+              <h4 class="film-card-title">Tatkar &amp; Chakkars</h4>
+              <span class="film-card-genre">Classical Discipline</span>
+            </div>
+          </article>
+
+          <article class="film-reel-card">
+            <div class="film-frame-media">
+              <img src="images/marketing-02.jpg" alt="Contemporary Floorwork Movement" loading="lazy">
+            </div>
+            <div class="film-card-info">
+              <h4 class="film-card-title">Gravity &amp; Suspension</h4>
+              <span class="film-card-genre">Contemporary Lyrical</span>
+            </div>
+          </article>
+
+          <article class="film-reel-card">
+            <div class="film-frame-media">
+              <img src="images/marketing-03.jpg" alt="Ensemble Stage Direction" loading="lazy">
+            </div>
+            <div class="film-card-info">
+              <h4 class="film-card-title">Stage Direction</h4>
+              <span class="film-card-genre">Ensemble Choreography</span>
+            </div>
+          </article>
+
+          <article class="film-reel-card">
+            <div class="film-frame-media">
+              <img src="images/marketing-04.jpg" alt="Kinetic Digital UI Synthesis" loading="lazy">
+            </div>
+            <div class="film-card-info">
+              <h4 class="film-card-title">Kinetic Geometry</h4>
+              <span class="film-card-genre">Digital Movement</span>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Minimal Dance Journey Timeline with Glowing Gold Nodes -->
+        <div class="dance-journey-container">
+          <span class="label-caps" style="margin-bottom: var(--space-md); display: block; text-align: center;">Chronology of Movement</span>
+          
+          <div class="journey-node-list">
+            
+            <div class="journey-node-item">
+              <div class="journey-node-bullet" aria-hidden="true"></div>
+              <span class="journey-node-year">2021 &bull; Classical Foundations</span>
+              <h4 class="journey-node-heading">Kathak Discipline &amp; Mudra Articulation</h4>
+              <p class="journey-node-text">
+                Mastered classical Indian rhythmics, intricate tatkar footwork sequences, and evocative abhinaya storytelling under formal gurukul discipline.
+              </p>
+            </div>
+
+            <div class="journey-node-item">
+              <div class="journey-node-bullet" aria-hidden="true"></div>
+              <span class="journey-node-year">2023 &bull; Stylistic Convergence</span>
+              <h4 class="journey-node-heading">Contemporary Fluidity &amp; Ground Mechanics</h4>
+              <p class="journey-node-text">
+                Integrated Western contemporary floorwork with classical Indian pirouettes, exploring the emotional dialogue between tension and release.
+              </p>
+            </div>
+
+            <div class="journey-node-item">
+              <div class="journey-node-bullet" aria-hidden="true"></div>
+              <span class="journey-node-year">2024 &bull; Ensemble Leadership</span>
+              <h4 class="journey-node-heading">College Festival Production Direction</h4>
+              <p class="journey-node-text">
+                Choreographed and led ensemble performances across collegiate stage circuits, aligning lighting, musical cues, and costume dynamics.
+              </p>
+            </div>
+
+            <div class="journey-node-item">
+              <div class="journey-node-bullet" aria-hidden="true"></div>
+              <span class="journey-node-year">2025–Present &bull; Cross-Disciplinary Synthesis</span>
+              <h4 class="journey-node-heading">Translating Choreography to Textile &amp; Code</h4>
+              <p class="journey-node-text">
+                Applying biological movement principles directly to fashion draping and web interaction design: ensuring fabric and interfaces respond with human cadence.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         IV. CHAMBER IV: THE ATELIER (FASHION DESIGNER)
+         ======================================================================= -->
+    <section class="chamber-atelier" id="atelier" aria-label="Chamber IV: The Atelier">
+      
+      <!-- Full-bleed atelier.jpg Background with Ambient Zoom -->
+      <div class="atelier-bg-layer" aria-hidden="true">
+        <img src="images/atelier.jpg" alt="Moody luxury fashion atelier in a gothic stone room" class="atelier-backdrop-img" loading="lazy">
+        <div class="atelier-dark-overlay"></div>
+      </div>
+
+      <div class="container" style="position: relative; z-index: 5;">
+        
+        <header class="chamber-header">
+          <div class="chamber-meta">
+            <span class="chamber-numeral">IV</span>
+            <div class="chamber-line"></div>
+            <span class="label-caps">Haute Couture &bull; Textile Architecture</span>
+          </div>
+          <h2 class="chamber-title">The Atelier</h2>
+          <p class="chamber-subtitle">Hover or tap cards to wipe from technical sketch to finalized garment</p>
+        </header>
+
+        <!-- Asymmetric Editorial Grid (6 Looks) -->
+        <div class="atelier-grid">
+          
+          <!-- Look 01 -->
+          <!-- EDIT ME: Look 01 -->
+          <article class="atelier-look-card" tabindex="0">
+            <div class="look-media-stage">
+              <span class="look-numeral-outline">01</span>
+              <img src="images/fashion-01-sketch.jpg" alt="Technical sketch of Inverness Cape" class="look-sketch-layer" loading="lazy">
+              <img src="images/fashion-01.jpg" alt="Final Inverness Velvet Cape" class="look-final-layer" loading="lazy">
+              <div class="fabric-fallback-texture">
+                <span class="fabric-fallback-tag">✨ Crimson Velvet &bull; 420g</span>
+              </div>
+            </div>
+            <div class="look-editorial-caption">
+              <h3 class="look-name">Inverness Velvet Cape</h3>
+              <span class="look-fabric-spec">Deep Crimson Velvet &bull; Gold Filigree</span>
+              <p class="look-concept-text">
+                Dramatic wing-span silhouette engineered for stage presence, cold stone halls, and split-sleeve articulation.
+              </p>
+            </div>
+          </article>
+
+          <!-- Look 02 -->
+          <!-- EDIT ME: Look 02 -->
+          <article class="atelier-look-card" tabindex="0">
+            <div class="look-media-stage">
+              <span class="look-numeral-outline">02</span>
+              <img src="images/fashion-02-sketch.jpg" alt="Technical sketch of Starlight Gown" class="look-sketch-layer" loading="lazy">
+              <img src="images/fashion-02.jpg" alt="Final Starlight Organza Gown" class="look-final-layer" loading="lazy">
+              <div class="fabric-fallback-texture">
+                <span class="fabric-fallback-tag">✨ Astral Organza &bull; 120g</span>
+              </div>
+            </div>
+            <div class="look-editorial-caption">
+              <h3 class="look-name">Celestial Starlight Gown</h3>
+              <span class="look-fabric-spec">Midnight Silk Organza &bull; Metallic Thread</span>
+              <p class="look-concept-text">
+                A kinetic floor-length gown cut to flare into an unbroken circular bell during high-speed dance pirouettes.
+              </p>
+            </div>
+          </article>
+
+          <!-- Look 03 -->
+          <!-- EDIT ME: Look 03 -->
+          <article class="atelier-look-card" tabindex="0">
+            <div class="look-media-stage">
+              <span class="look-numeral-outline">03</span>
+              <img src="images/fashion-03-sketch.jpg" alt="Technical sketch of Brocade Waistcoat" class="look-sketch-layer" loading="lazy">
+              <img src="images/fashion-03.jpg" alt="Final Brocade Courtier Waistcoat" class="look-final-layer" loading="lazy">
+              <div class="fabric-fallback-texture">
+                <span class="fabric-fallback-tag">✨ Metallic Jacquard &bull; 340g</span>
+              </div>
+            </div>
+            <div class="look-editorial-caption">
+              <h3 class="look-name">Gilded Courtier Waistcoat</h3>
+              <span class="look-fabric-spec">Antique Gold Jacquard &bull; Habotai Silk</span>
+              <p class="look-concept-text">
+                Structured double-breasted tailoring reinforced with horsehair canvas interlining and heraldic brass accents.
+              </p>
+            </div>
+          </article>
+
+          <!-- Look 04 -->
+          <!-- EDIT ME: Look 04 -->
+          <article class="atelier-look-card" tabindex="0">
+            <div class="look-media-stage">
+              <span class="look-numeral-outline">04</span>
+              <img src="images/fashion-04-sketch.jpg" alt="Technical sketch of Scholar Trench" class="look-sketch-layer" loading="lazy">
+              <img src="images/fashion-04.jpg" alt="Final Scholar Emerald Trench" class="look-final-layer" loading="lazy">
+              <div class="fabric-fallback-texture">
+                <span class="fabric-fallback-tag">✨ Wool Gabardine &bull; 400g</span>
+              </div>
+            </div>
+            <div class="look-editorial-caption">
+              <h3 class="look-name">Runed Scholar Trench</h3>
+              <span class="look-fabric-spec">Waterproof Emerald Gabardine</span>
+              <p class="look-concept-text">
+                Utilitarian academic outerwear with oversized storm flap collar and reinforced book and instrument pockets.
+              </p>
+            </div>
+          </article>
+
+          <!-- Look 05 -->
+          <!-- EDIT ME: Look 05 -->
+          <article class="atelier-look-card" tabindex="0">
+            <div class="look-media-stage">
+              <span class="look-numeral-outline">05</span>
+              <img src="images/fashion-05-sketch.jpg" alt="Technical sketch of Terracotta Tunic" class="look-sketch-layer" loading="lazy">
+              <img src="images/fashion-05.jpg" alt="Final Quilted Terracotta Tunic" class="look-final-layer" loading="lazy">
+              <div class="fabric-fallback-texture">
+                <span class="fabric-fallback-tag">✨ Quilted Linen &bull; 380g</span>
+              </div>
+            </div>
+            <div class="look-editorial-caption">
+              <h3 class="look-name">Alchemist Quilted Tunic</h3>
+              <span class="look-fabric-spec">Washed Terracotta Linen &bull; Diamond Stitch</span>
+              <p class="look-concept-text">
+                Studio benchwear built for tactile warmth and mobility, featuring modular leather holster attachments.
+              </p>
+            </div>
+          </article>
+
+          <!-- Look 06 -->
+          <!-- EDIT ME: Look 06 -->
+          <article class="atelier-look-card" tabindex="0">
+            <div class="look-media-stage">
+              <span class="look-numeral-outline">06</span>
+              <img src="images/fashion-06-sketch.jpg" alt="Technical sketch of Amethyst Corset" class="look-sketch-layer" loading="lazy">
+              <img src="images/fashion-06.jpg" alt="Final Amethyst Corset &amp; Capelet" class="look-final-layer" loading="lazy">
+              <div class="fabric-fallback-texture">
+                <span class="fabric-fallback-tag">✨ Duchesse Satin &bull; 300g</span>
+              </div>
+            </div>
+            <div class="look-editorial-caption">
+              <h3 class="look-name">Amethyst Starlight Corset</h3>
+              <span class="look-fabric-spec">Silk Duchesse Satin &bull; Steel Boning</span>
+              <p class="look-concept-text">
+                Ceremonial evening wear combining rigid anatomical boning with a detachable sweeping violet capelet.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Fabric Swatches Strip & Palette Circles -->
+        <div class="atelier-swatches-strip">
+          <span class="swatches-header-label">Material Palette &bull; Atelier Formulations</span>
+          <div class="swatches-flex-bar" role="list">
+            
+            <div class="swatch-item-unit" role="listitem">
+              <div class="swatch-dot sw-1"></div>
+              <div>
+                <span class="swatch-unit-name">Obsidian Velvet</span>
+                <span class="swatch-unit-desc">420 GSM &bull; Silk/Cotton</span>
+              </div>
+            </div>
+
+            <div class="swatch-item-unit" role="listitem">
+              <div class="swatch-dot sw-2"></div>
+              <div>
+                <span class="swatch-unit-name">Ink Emerald</span>
+                <span class="swatch-unit-desc">400 GSM &bull; Gabardine</span>
+              </div>
+            </div>
+
+            <div class="swatch-item-unit" role="listitem">
+              <div class="swatch-dot sw-3"></div>
+              <div>
+                <span class="swatch-unit-name">Aged Gold Leaf</span>
+                <span class="swatch-unit-desc">340 GSM &bull; Jacquard</span>
+              </div>
+            </div>
+
+            <div class="swatch-item-unit" role="listitem">
+              <div class="swatch-dot sw-4"></div>
+              <div>
+                <span class="swatch-unit-name">Midnight Astral</span>
+                <span class="swatch-unit-desc">120 GSM &bull; Organza</span>
+              </div>
+            </div>
+
+            <div class="swatch-item-unit" role="listitem">
+              <div class="swatch-dot sw-5"></div>
+              <div>
+                <span class="swatch-unit-name">Deep Burgundy</span>
+                <span class="swatch-unit-desc">300 GSM &bull; Duchesse</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Standalone Design Journal Area (Works With Zero Photos) -->
+        <div class="design-journal-area">
+          <span class="label-caps" style="margin-bottom: var(--space-md); display: block; text-align: center;">Atelier Research Journal</span>
+          
+          <div class="journal-cards-grid">
+            
+            <article class="journal-entry-card">
+              <span class="journal-entry-date">Discourse No. 08 &bull; Movement Mechanics</span>
+              <h4 class="journal-entry-heading">Kinetic Drapery in Stage Wear</h4>
+              <p class="journal-entry-body">
+                Balancing hem circumference against centrifugal speed during Kathak spins: when weight is calibrated along the lower seam, the fabric maintains a suspension bell effect that outlasts the dancer's deceleration.
+              </p>
+            </article>
+
+            <article class="journal-entry-card">
+              <span class="journal-entry-date">Discourse No. 14 &bull; Natural Alchemy</span>
+              <h4 class="journal-entry-heading">Sustainable Botanical Pigments</h4>
+              <p class="journal-entry-body">
+                Boiling walnut rinds, madder roots, and pomegranate peels fixed with ferrous sulfate. Yields deep, lightfast earth tones that evoke centuries of archival library manuscripts.
+              </p>
+            </article>
+
+            <article class="journal-entry-card">
+              <span class="journal-entry-date">Discourse No. 22 &bull; Philosophical Symmetry</span>
+              <h4 class="journal-entry-heading">Code Grammar as Pattern Drafting</h4>
+              <p class="journal-entry-body">
+                Pattern drafting and responsive CSS follow the same universal geometry: constraints, fluid percentages, and structural anchors. When precision aligns, garments and web pages feel weightless.
+              </p>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         V. THE CABINET OF CURIOSITIES (ABOUT SECTION)
+         ======================================================================= -->
+    <section class="chamber-cabinet" id="cabinet" aria-label="The Cabinet of Curiosities">
+      <div class="container">
+        
+        <header class="chamber-header" style="text-align: center;">
+          <div class="chamber-meta" style="justify-content: center;">
+            <span class="chamber-numeral">V</span>
+            <div class="chamber-line"></div>
+            <span class="label-caps">The Inner Sanctuary</span>
+          </div>
+          <h2 class="chamber-title">The Cabinet of Curiosities</h2>
+          <p class="chamber-subtitle" style="margin: 0 auto;">Artifacts of craft, thought, and disciplined study</p>
+        </header>
+
+        <!-- Editorial Bio -->
+        <div class="cabinet-editorial-intro">
+          <p class="cabinet-bio-quote">
+            <!-- EDIT ME: Short bio quote -->
+            "I do not believe curiosity should be confined to a single chamber. Where code renders, where bodies dance, where fabric drapes, and where campaigns connect — that is where authentic wonder happens."
+          </p>
+          <p class="cabinet-bio-body">
+            <!-- EDIT ME: Short bio body -->
+            I am Sapna, a first-year student and multidisciplinary practitioner based in New Delhi. Synthesizing software engineering with classical Indian and contemporary dance, haute couture patternmaking, and agency-level marketing strategy at Vedonyx, I treat every project as an integrated spell of craft.
+          </p>
+        </div>
+
+        <!-- Glass-Panel Specimen Cells Grid (6 Cells) -->
+        <div class="cabinet-cells-grid">
+          
+          <article class="specimen-glass-cell" tabindex="0">
+            <div class="specimen-header">
+              <span class="specimen-tag">Artifact 01</span>
+              <div class="specimen-indicator"></div>
+            </div>
+            <h3 class="specimen-name">Semantic DOM Architecture</h3>
+            <p class="specimen-caption">
+              Clean HTML5, modern CSS3 Grid &amp; :has(), fluid clamp() responsiveness, and zero-dependency accessibility.
+            </p>
+          </article>
+
+          <article class="specimen-glass-cell" tabindex="0">
+            <div class="specimen-header">
+              <span class="specimen-tag">Artifact 02</span>
+              <div class="specimen-indicator"></div>
+            </div>
+            <h3 class="specimen-name">Computational Logic</h3>
+            <p class="specimen-caption">
+              Vanilla JavaScript ES6+, Python data scripting, state management, and algorithmic problem-solving.
+            </p>
+          </article>
+
+          <article class="specimen-glass-cell" tabindex="0">
+            <div class="specimen-header">
+              <span class="specimen-tag">Artifact 03</span>
+              <div class="specimen-indicator"></div>
+            </div>
+            <h3 class="specimen-name">Visual &amp; Editorial Design</h3>
+            <p class="specimen-caption">
+              Typography hierarchies, grid layouts, luxury editorial branding, Figma prototypes, and Adobe Creative Cloud.
+            </p>
+          </article>
+
+          <article class="specimen-glass-cell" tabindex="0">
+            <div class="specimen-header">
+              <span class="specimen-tag">Artifact 04</span>
+              <div class="specimen-indicator"></div>
+            </div>
+            <h3 class="specimen-name">Agency Campaign Alchemy</h3>
+            <p class="specimen-caption">
+              Multi-channel digital marketing, audience retention funnels, social engagement, and analytics at Vedonyx.
+            </p>
+          </article>
+
+          <article class="specimen-glass-cell" tabindex="0">
+            <div class="specimen-header">
+              <span class="specimen-tag">Artifact 05</span>
+              <div class="specimen-indicator"></div>
+            </div>
+            <h3 class="specimen-name">Kinetic Stagecraft</h3>
+            <p class="specimen-caption">
+              Classical Kathak discipline, rhythmic mudra storytelling, contemporary floorwork, and production direction.
+            </p>
+          </article>
+
+          <article class="specimen-glass-cell" tabindex="0">
+            <div class="specimen-header">
+              <span class="specimen-tag">Artifact 06</span>
+              <div class="specimen-indicator"></div>
+            </div>
+            <h3 class="specimen-name">Couture Textile Engineering</h3>
+            <p class="specimen-caption">
+              Garment pattern drafting, anatomical boning, biological draping, and natural dye formulation.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         VI. THE LAST LETTER (CONTACT SECTION)
+         ======================================================================= -->
+    <section class="chamber-letter" id="contact" aria-label="The Last Letter">
+      <div class="container">
+        
+        <header class="chamber-header" style="text-align: center;">
+          <div class="chamber-meta" style="justify-content: center;">
+            <span class="chamber-numeral">VI</span>
+            <div class="chamber-line"></div>
+            <span class="label-caps">Formal Correspondence</span>
+          </div>
+          <h2 class="chamber-title">The Last Letter</h2>
+          <p class="chamber-subtitle" style="margin: 0 auto;">Click the seal to break the wax and dispatch an inquiry</p>
+        </header>
+
+        <!-- Pure CSS Wax-Sealed Envelope Container -->
+        <div class="envelope-stage">
+          <div class="envelope-box">
+            
+            <!-- Seal Trigger (Label bound to #unseal-letter) -->
+            <label for="unseal-letter" class="envelope-seal-trigger" tabindex="0">
+              <div class="envelope-seal-stamp">S</div>
+              <span class="envelope-hint-text">Click Seal to Unfurl Letter</span>
+            </label>
+
+            <!-- Sliding Parchment Letter Form -->
+            <div class="parchment-letter-panel">
+              <h3 class="letter-form-heading">Inscribe Your Message</h3>
+              <span class="letter-form-sub">Direct correspondence dispatched to Sapna's desk</span>
+
+              <!-- HTML Form -->
+              <!-- EDIT ME: Replace https://formspree.io/f/placeholder with your Formspree ID or mailto:sapna@example.com -->
+              <form action="https://formspree.io/f/placeholder" method="POST" class="letter-html-form">
+                
+                <div class="form-field-unit">
+                  <label for="sender-name">Your Full Name &amp; Title</label>
+                  <input type="text" id="sender-name" name="name" placeholder="e.g. Eleanor Vance / Director" required>
+                </div>
+
+                <div class="form-field-unit">
+                  <label for="sender-email">Return Correspondence (Email)</label>
+                  <input type="email" id="sender-email" name="email" placeholder="e.g. contact@sanctuary.org" required>
+                </div>
+
+                <div class="form-field-unit">
+                  <label for="sender-discipline">Nature of Collaboration</label>
+                  <input type="text" id="sender-discipline" name="subject" placeholder="e.g. Web Development / Dance / Fashion / Agency Campaign" required>
+                </div>
+
+                <div class="form-field-unit">
+                  <label for="sender-body">Letter Parchment</label>
+                  <textarea id="sender-body" name="message" rows="5" placeholder="Inscribe your proposal or greeting here..." required></textarea>
+                </div>
+
+                <button type="submit" class="form-submit-btn">Dispatch Correspondence &rarr;</button>
+              </form>
+            </div>
+
+          </div>
+
+          <!-- Social Quiet Links -->
+          <div class="letter-social-links">
+            <!-- EDIT ME: LinkedIn profile -->
+            <a href="https://www.linkedin.com/in/sapna-talke-6a1ba9378" class="social-quiet-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <!-- EDIT ME: GitHub profile -->
+            <a href="https://github.com/sapna" class="social-quiet-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <!-- EDIT ME: Instagram profile -->
+            <a href="https://instagram.com/sapna" class="social-quiet-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </div>
+
+          <!-- Footer in Tiny Caps -->
+          <footer class="archive-footer">
+            <p class="footer-mischief">"MISCHIEF MANAGED."</p>
+            <p class="footer-copy">
+              Crafted in Pure HTML5 &amp; CSS3 &bull; Sapna's Archive &bull; &copy; 2026 Sapna
+            </p>
+          </footer>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
